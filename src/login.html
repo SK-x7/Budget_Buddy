@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>BudgetBuddy</title>
+  </head>
+
+  <body>
+    <div class="app">
+      <section class="sect1" style="font-size: 2.5rem">
+        <header class="headerr">
+          <h1 class="headerr1">keep saving</h1>
+          <h1 class="headerr2">keep growing</h1>
+        </header>
+        <span>
+          <img
+            src="./resources/_0680d48e-fbbb-42d9-aafe-07870a57628c-removebg-preview - Copy.png"
+            alt="Bitcoin"
+            id="image"
+          />
+        </span>
+      </section>
+      <section class="sect2">
+        <span>
+          <img class="logo" src="./resources/Group 3.png" alt="BudgetBuddy" />
+        </span>
+        <header>
+          <h3 style="color: #4612b4; text-transform: uppercase">
+            welcome back
+          </h3>
+        </header>
+        <!-- <span>Log in with</span> -->
+        <!-- form -->
+        <form action="#" style="display: inline-block">
+          <span>Log in with</span>
+          <fieldset class="maang-btn">
+            <button class="fa fa-facebook" id="fb"></button>
+            <button class="fa fa-twitter" id="twitter"></button>
+            <button class="fa fa-google" id="google"></button>
+          </fieldset>
+          <span>or</span>
+          <fieldset>
+            <input type="email" placeholder="E-mail/@username" /><br /><br />
+            <input
+              type="password"
+              id="passwrdInputId"
+              placeholder="Password"
+              onkeyup="check()"
+              required
+            /><br />
+            <p style="color: red" id="errorMsgSpanId"></p>
+            <div class="pass">
+              <input type="checkbox" /><label for="">Keep me logged in</label>
+              <footer><a href="#">Forgot Password?</a></footer>
+            </div>
+            <span>
+              <button id="signin">Sign In</button>
+            </span>
+          </fieldset>
+          <span>or</span>
+          <fieldset>
+            <span> Don't have an account? </span>
+            <span>
+              <a href="index.html">Sign Up</a>
+            </span>
+          </fieldset>
+        </form>
+        <!-- <span>Log in with</span> -->
+      </section>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

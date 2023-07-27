@@ -1,0 +1,167 @@
+html {
+  font-size: 6vw;
+  background-color: #d7c7ff;
+}
+
+#nav {
+  display: grid;
+  grid-template-columns: 30% 20% 50%;
+}
+
+#logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  overflow: hidden;
+  width: 100%;
+}
+
+#menu {
+  display: inline-block;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-top: 5%;
+}
+#menu > li {
+  display: inline-block;
+  /* float: right; */
+  margin-left: 5%;
+  font-size: 35%;
+}
+
+#Herosec {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#heroimg {
+  grid-column: 1/2;
+  width: 100%;
+}
+
+#heroimg > img {
+  width: 100%;
+}
+
+#herotxt {
+  grid-column: 2/3;
+  font-size: 55%;
+  margin-left: 10%;
+}
+
+#WHTBB {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+#wtxt {
+  grid-column: 1/2;
+}
+
+#wtxt > h2 {
+  font-size: 75%;
+}
+#wtxt > p {
+  font-size: 50%;
+}
+
+#whtimg {
+  grid-column: 2/3;
+}
+#whtimg > img {
+  width: 100%;
+  justify-self: center;
+  margin-top: 20%;
+}
+
+#fethead {
+  font-size: 75%;
+  text-align: center;
+}
+
+#features {
+  display: grid;
+  width: 100%;
+  height: 70vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10%;
+}
+
+.f {
+  display: grid;
+  grid-column: 1fr;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+}
+
+.f > .fimg > img {
+  grid-row: 1/2;
+  width: 100%;
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+}
+
+.f > .ftxt > p {
+  grid-row: 2/3;
+  font-size: 40%;
+  text-align: center;
+  margin-top: -100px;
+  align-self: center;
+  justify-self: center;
+}
+
+#mission {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  width: 100%;
+}
+
+#Mtxt {
+  grid-column: 1/2;
+}
+
+#Mtxt > h2 {
+  font-size: 75%;
+}
+
+#Mtxt > p {
+  font-size: 50%;
+}
+#Mimg {
+  width: 100%;
+  grid-column: 2/3;
+}
+#Mimg > img {
+  width: 100%;
+}
+
+#fword {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+
+#fimgf {
+  grid-column: 1/2;
+  width: 100%;
+}
+#fimgf > img {
+  width: 100%;
+}
+
+#ftxtf {
+  width: 100%;
+}
+
+#ftxtf > h1 {
+  font-size: 100%;
+}
+
+button {
+  width: 45%;
+  height: 10%;
+  background-color: #3900c6;
+  border-radius: 20px;
+  font-size: 40%;
+  color: #ffffff;
+}
