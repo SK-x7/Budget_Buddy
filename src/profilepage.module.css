@@ -1,0 +1,245 @@
+/* Basic styles for the sidebar */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efe9ff;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  /* Set the sidebar height to cover the full viewport height */
+  background-color: #e5dbff;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* Stack children vertically */
+  justify-content: space-between;
+  /* Space items evenly along the main axis */
+  box-shadow: 4px 1.9px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the top image */
+.sidebar_image_top img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Styles for the sidebar options */
+.sidebar_options {
+  list-style: none;
+}
+
+.sidebar_options li {
+  margin-bottom: 5px;
+}
+
+.sidebar_options li button {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 20%;
+}
+
+.sidebar_options li button:hover {
+  background-color: #ddd;
+}
+
+/* Styles for the bottom image */
+.sidebar_image_bottom img {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  /* Push the image to the bottom */
+}
+
+/* Styles for the main content (profile boxes) */
+.content {
+  margin-left: 200px;
+  /* To account for the sidebar width */
+  padding: 20px;
+}
+
+.profile_box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 576px) {
+  .profile_box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile_box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile_box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.profile_picture {
+  background-color: #f9f6ff;
+  height: 50vh;
+  width: 30vw;
+  margin: 0.3vw;
+  border-radius: 20px;
+  box-shadow: 3px 1.9px 0 rgba(0, 0, 0, 0.2);
+  /* border: 1px solid black; */
+}
+
+.user_info {
+  background-color: #f9f6ff;
+  height: auto;
+  width: 30vw;
+  border-radius: 20px;
+  box-shadow: 3px 1.9px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.3vw;
+}
+
+.list_box {
+  background-color: #f9f6ff;
+  height: fit-content;
+  box-shadow: 4px 1.9px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  font-size: 1.5rem;
+  /* Styles for the list items box */
+  /* Adjust fonts, colors, etc. as needed */
+}
+
+#editButton {
+  height: 4vh;
+  width: 6vw;
+  margin-top: 1.2vh;
+  box-shadow: 3px 1.9px 0 rgba(0, 0, 0, 0.2);
+  background-color: #d7c7ff;
+  border: none;
+  border-radius: 20px;
+  margin-right: -1.1em;
+}
+
+#uname {
+  margin-top: 1.2vh;
+  font-size: 2.2rem;
+  margin-left: -0.6em;
+}
+
+.span {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 2em 1em 2em;
+}
+
+#email,
+#phone-num {
+  font-size: 1.6rem;
+  margin-left: 1.5rem;
+  color: #5c5c5c;
+}
+
+.list_box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list_box li {
+  display: flex;
+  align-items: center;
+  /* Align items vertically in the flex container */
+  margin-bottom: 10px;
+}
+.list_box li img {
+  width: 4vw;
+  /* Set the desired width for the icon image */
+  height: 10vh;
+  /* Set the desired height for the icon image */
+  margin-right: 10px;
+  /* Add spacing between the icon and the link */
+}
+
+.list_box li a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+  /* Add spacing between the link and the description */
+}
+
+.list_box li p {
+  margin-top: 5px;
+  /* Add spacing between the link and the description */
+}
+
+#view_more {
+  height: 4vh;
+  width: 20vw;
+  margin-top: 1.2vh;
+  box-shadow: 3px 1.9px 0 rgba(0, 0, 0, 0.2);
+  background-color: #d7c7ff;
+  border: none;
+  border-radius: 20px;
+  /* margin-ri    ght: -1.1em; */
+}
+
+/* Styles for the stats container */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #f9f6ff;
+  box-shadow: 3px 1.9px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  /* Add some vertical spacing between each item */
+}
+
+/* Styles for each stat item */
+.stats div {
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  /* Align the image and text vertically */
+}
+
+.stats div img {
+  margin-right: 10px;
+  /* Add some spacing between the image and the text */
+  width: 4vw;
+  height: auto;
+}
+
+.avg1,
+.avg2 {
+  font-size: 1.75rem;
+}
+
+.bottom_right_image {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 30vw;
+  opacity: 0.9;
+  height: auto;
+  mix-blend-mode: multiply;
+}
