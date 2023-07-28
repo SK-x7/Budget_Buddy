@@ -24,7 +24,6 @@ body {
 .sect1 {
   grid-area: area1;
   width: 50vw;
-  /* background-color: #4612b4; */
   /* float: left; */
 }
 
@@ -74,7 +73,7 @@ h3 {
   font-size: 2.5em;
 }
 
-fieldset.maang_btn button {
+fieldset.maang-btn button {
   border-radius: 0.75vw;
   font-weight: bolder;
   font-size: 1.8em;
@@ -101,11 +100,10 @@ input[type="checkbox"] {
   width: 1vw;
 }
 
-#pass {
+.pass {
   display: flex;
   font-size: 0.8em;
-  margin-top: 2.5vh;
-  margin-bottom: 1vh;
+  margin-top: 2vh;
 }
 
 footer {
@@ -126,19 +124,39 @@ footer {
 }
 
 #image {
-  /* border: 3px solid  #F45A29; */
-  height: 65vh;
+  /* border: 3px solid #F45A29; */
+  height: 67vh;
+  margin-top: 7vh;
 }
 
-#signin {
-  border-radius: 0.4vw;
-  width: 19vw;
-  height: 6vh;
-  color: #f9e5ff;
-  background-color: #4612b4;
-  font-weight: bold;
-  margin-top: 1vh;
-  font-size: 1em;
-  border: none;
-  box-shadow: 3px 2px 2px 1.5px rgba(165, 145, 199, 1);
+.login {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+
+#signinbtn{
+  background:none;
+  border:none;
+  color:blue;
+  cursor:pointer;
+  text-decoration:underline;
+}
+
+#fb{
+  height: 4vh;
+  background-repeat: no-repeat;
+  width: fit-content;
+}
+
+#twitter{
+  height: 4vh;
+  background-repeat: no-repeat;
+  width: fit-content;
+}
+
+#google{
+  height: 4vh;
+  background-repeat: no-repeat;
+  width: fit-content;
 }
