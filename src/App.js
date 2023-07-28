@@ -72,13 +72,13 @@ function SideMenu({ onOpen, setOpen }) {
       <div className={styles.image_container}>
         <img alt="logo_image" src={logo} className={styles.logo_img} />
       </div>
-      <div className="page_list">
+      <div className={styles.page_list}>
         <ul>
           <PageList onOpen={onOpen} setOpen={setOpen} />
         </ul>
       </div>
-      <div className="bottom_footer_img">
-        <img className="footer_img" alt="footer_img" src={Smfoo}></img>
+      <div className={styles.bottom_footer_img}>
+        <img className={styles.footer_img} alt="footer_img" src={Smfoo}></img>
       </div>
     </div>
   );
@@ -87,26 +87,25 @@ function SideMenu({ onOpen, setOpen }) {
 function PageList({ onOpen, setOpen }) {
   return (
     <>
-      <li className="list_element">
-        <button className="sml_button" onClick={() => onOpen("home")}>
-          <img className="sm_list_img" alt="sm_list" src={home_img}></img> Home
+      <li className={styles.list_element}>
+        <img className={styles.sm_list_img} alt="sm_list" src={home_img} />
+        <button className={styles.sml_button} onClick={() => onOpen("home")}>
+          Home
         </button>
       </li>
-      <li className="list_element">
-        <button className="sml_button">
-          <img className="sm_list_img" alt="sm_list" src={insight_img} />
-          Overview
-        </button>
-      </li>
-      <li className="list_element">
-        <button className="sml_button" onClick={() => onOpen("insight")}>
-          <img className="sm_list_img" alt="sm_list" src={home_img} />
+      <li className={styles.list_element}>
+        <img className={styles.sm_list_img} alt="sm_list" src={insight_img} />
+        <button className={styles.sml_button} onClick={() => onOpen("insight")}>
           Insights
         </button>
       </li>
-      <li className="list_element">
-        <button className="sml_button" onClick={() => onOpen("mppage")}>
-          <img className="sm_list_img" alt="sm_list" src={marketplace_img} />
+      <li className={styles.list_element}>
+        <img
+          className={styles.sm_list_img}
+          alt="sm_list"
+          src={marketplace_img}
+        />
+        <button className={styles.sml_button} onClick={() => onOpen("mppage")}>
           Marketplace
         </button>
       </li>
@@ -119,16 +118,16 @@ function HomePage() {
     <>
       <div className={styles.main_right}>
         <ProfileBar />
-        <div className="tp_graph">
+        <div className={styles.tp_graph}>
           <NonGraphSec />
-          <div className="graph_section">
-            <div className="bar_chart_container">
-              <div className="date_month">
+          <div className={styles.graph_section}>
+            <div className={styles.bar_chart_container}>
+              <div className={styles.date_mon}>
                 <ul>
                   <li>July 2023</li>
                 </ul>
               </div>
-              <div className="filters">
+              <div className={styles.filters}>
                 <span>🟣 Income VS Expenses</span>
                 <select>
                   <option>Last 3 days</option>
@@ -136,30 +135,27 @@ function HomePage() {
                   <option>Last 14 days</option>
                 </select>
               </div>
-              <div className="bar_graph">
+              <div className={styles.bar_graph}>
                 <Example />
               </div>
             </div>
-            <div className="balance_limit">
+            <div className={styles.balance_limit}>
               <h1>Balance</h1>
               <h1>50,000$</h1>
-              <div className="bl_ie">
+              <div className={styles.bl_ie}>
                 <span>Income</span>
                 <span>30000$</span>
               </div>
-              <div className="bl_ie">
+              <div className={styles.bl_ie}>
                 <span>Expenses</span>
                 <span>40000$</span>
               </div>
-              <div className="Spending_Limit">
-                <div className="sl_title">
+              <div className={styles.Spending_Limit}>
+                <div className={styles.sl_title}>
                   <h2>Spending Limit</h2>
                   <button>Edit</button>
                 </div>
-                <div
-                  className="
-                    progress_div"
-                >
+                <div className={styles.progress_div}>
                   <ProgressBar bgcolor="#ae94ee" progress="30" height={30} />
                 </div>
                 <h5>Monthly Transaction Limit</h5>
@@ -179,10 +175,10 @@ function HomePage() {
 
 function ProfileBar(params) {
   return (
-    <div className="profile_bar">
+    <div className={styles.profile_bar}>
       <h1>Hello User</h1>
-      <div className="profile_page_container">
-        <img className="profile_photo" alt="profile" src={profile_img} />
+      <div className={styles.profile_page_container}>
+        <img className={styles.profile_photo} alt="profile" src={profile_img} />
       </div>
     </div>
   );
@@ -190,7 +186,7 @@ function ProfileBar(params) {
 
 function NonGraphSec(params) {
   return (
-    <div className="non_graph_section">
+    <div className={styles.non_graph_section}>
       <TransactionContainer />
       <PrioritiesContainer />
     </div>
@@ -200,19 +196,19 @@ function NonGraphSec(params) {
 function TransactionContainer(params) {
   return (
     <>
-      <div className="transaction_container">
-        <div className="transaction_heading">
+      <div className={styles.transaction_container}>
+        <div className={styles.transaction_heading}>
           <ul>
             <li>Transactions</li>
           </ul>
         </div>
-        <div className="filters">
-          <select className="select_btn">
+        <div className={styles.filters}>
+          <select className={styles.select_btn}>
             <option>Today</option>
             <option>yesterday</option>
             <option>This week</option>
           </select>
-          <select className="select_btn">
+          <select className={styles.select_btn}>
             <option>Filters</option>
             <option>Grocery</option>
             <option>Rent</option>
@@ -220,9 +216,9 @@ function TransactionContainer(params) {
           </select>
         </div>
         <TransactionList />
-        <div className="transaction_buttons">
-          <button className="tbtn_1">view more</button>
-          <button className="tbtn_2">+</button>
+        <div className={styles.transaction_buttons}>
+          <button className={styles.tbtn_1}>view more</button>
+          <button className={styles.tbtn_2}>+</button>
         </div>
       </div>
     </>
@@ -232,31 +228,31 @@ function TransactionContainer(params) {
 function TransactionList(params) {
   return (
     <>
-      <div className="transaction_list">
+      <div className={styles.transaction_list}>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Salary</span>
-          <span className="tl_price">+45000</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Salary</span>
+          <span className={styles.tl_price}>+45000</span>
         </li>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Rent</span>
-          <span className="tl_price">-400</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Rent</span>
+          <span className={styles.tl_price}>-400</span>
         </li>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Pocket Money</span>
-          <span className="tl_price">+100</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Pocket Money</span>
+          <span className={styles.tl_price}>+100</span>
         </li>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Bills</span>
-          <span className="tl_price">-1400</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Bills</span>
+          <span className={styles.tl_price}>-1400</span>
         </li>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Grocery</span>
-          <span className="tl_price">-400</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Grocery</span>
+          <span className={styles.tl_price}>-400</span>
         </li>
       </div>
     </>
@@ -266,30 +262,30 @@ function TransactionList(params) {
 function ITransactionContainer(params) {
   return (
     <>
-      <div className="itransaction_container">
-        <div className="transaction_heading">
+      <div className={styles.itransaction_container}>
+        <div className={styles.transaction_heading}>
           <ul>
             <li>Transaction History</li>
           </ul>
         </div>
         <>
-          <div className="th_day">
+          <div className={styles.th_day}>
             <h3>Today</h3>
           </div>
-          <div className="transaction_hdiv">
+          <div className={styles.transaction_hdiv}>
             <ITransactionList />
           </div>
-          <div className="th_day">
+          <div className={styles.th_day}>
             <h3>Today</h3>
           </div>
-          <div className="transaction_hdiv">
+          <div className={styles.transaction_hdiv}>
             <ITransactionList />
           </div>
         </>
 
-        <div className="transaction_buttons">
+        <div className={styles.transaction_buttons}>
           {/* <button className="tbtn_1">view more</button> */}
-          <button className="itbtn_2">+</button>
+          <button className={styles.itbtn_2}>+</button>
         </div>
       </div>
     </>
@@ -299,36 +295,36 @@ function ITransactionContainer(params) {
 function ITransactionList(params) {
   return (
     <>
-      <div className="itransaction_list">
+      <div className={styles.itransaction_list}>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Salary</span>
-          <span className="tl_price">+45000</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Salary</span>
+          <span className={styles.tl_price}>+45000</span>
         </li>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Rent</span>
-          <span className="tl_price">-400</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Rent</span>
+          <span className={styles.tl_price}>-400</span>
         </li>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Pocket Money</span>
-          <span className="tl_price">+100</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Pocket Money</span>
+          <span className={styles.tl_price}>+100</span>
         </li>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Bills</span>
-          <span className="tl_price">-1400</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Bills</span>
+          <span className={styles.tl_price}>-1400</span>
         </li>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Grocery</span>
-          <span className="tl_price">-400</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Grocery</span>
+          <span className={styles.tl_price}>-400</span>
         </li>
         <li>
-          <img className="pup_img" src={priUp_img} alt="in_out" />
-          <span className="tl_heading">Grocery</span>
-          <span className="tl_price">-400</span>
+          <img className={styles.pup_img} src={priUp_img} alt="in_out" />
+          <span className={styles.tl_heading}>Grocery</span>
+          <span className={styles.tl_price}>-400</span>
         </li>
       </div>
     </>
@@ -338,16 +334,16 @@ function ITransactionList(params) {
 function PrioritiesContainer(params) {
   return (
     <>
-      <div className="priorities_container">
-        <div className="priorities_heading">
+      <div className={styles.priorities_container}>
+        <div className={styles.priorities_heading}>
           <ul>
             <li>Priorities</li>
           </ul>
         </div>
         <PrioritiesList />
-        <div className="transaction_buttons">
-          <button className="tbtn_1">view more</button>
-          <button className="tbtn_2">+</button>
+        <div className={styles.transaction_buttons}>
+          <button className={styles.tbtn_1}>view more</button>
+          <button className={styles.tbtn_2}>+</button>
         </div>
       </div>
     </>
@@ -357,29 +353,29 @@ function PrioritiesContainer(params) {
 function PrioritiesList(params) {
   return (
     <>
-      <div className="priorities_list">
+      <div className={styles.priorities_list}>
         <li>
-          <span className="pl_mark">🟣</span>
-          <span className="pl_title"> headphones</span>
+          <span className={styles.pl_mark}>🟣</span>
+          <span className={styles.pl_title}> headphones</span>
 
-          <div className="pl_right">
-            <span className="pl_price">1400</span>
-            <button className="pl_btn">✅</button>
-            <button className="pl_btn">❌</button>
-            <button className="pl_btn">⬆️</button>
-            <button className="pl_btn">⬇️</button>
+          <div className={styles.pl_right}>
+            <span className={styles.pl_price}>1400</span>
+            <button className={styles.pl_btn}>✅</button>
+            <button className={styles.pl_btn}>❌</button>
+            <button className={styles.pl_btn}>⬆️</button>
+            <button className={styles.pl_btn}>⬇️</button>
           </div>
         </li>
         <li>
-          <span className="pl_mark">🟣</span>
-          <span className="pl_title"> headphones</span>
+          <span className={styles.pl_mark}>🟣</span>
+          <span className={styles.pl_title}> headphones</span>
 
-          <div className="pl_right">
-            <span className="pl_price">1400</span>
-            <button className="pl_btn">✅</button>
-            <button className="pl_btn">❌</button>
-            <button className="pl_btn">⬆️</button>
-            <button className="pl_btn">⬇️</button>
+          <div className={styles.pl_right}>
+            <span className={styles.pl_price}>1400</span>
+            <button className={styles.pl_btn}>✅</button>
+            <button className={styles.pl_btn}>❌</button>
+            <button className={styles.pl_btn}>⬆️</button>
+            <button className={styles.pl_btn}>⬇️</button>
           </div>
         </li>
       </div>
@@ -390,35 +386,32 @@ function PrioritiesList(params) {
 function InsightPage(params) {
   return (
     <>
-      <div className="insight_right">
-        <div className="insight_right_l">
-          <div className="date_month">
+      <div className={styles.insight_right}>
+        <div className={styles.insight_right_l}>
+          <div className={styles.date_month}>
             <ul>
               <li>July 2023</li>
             </ul>
           </div>
           <h1>Balance</h1>
           <h1>50,000$</h1>
-          <div className="bl_ie">
+          <div className={styles.bl_ie}>
             <span>Income</span>
             <span>30000$</span>
           </div>
-          <div className="bl_ie">
+          <div className={styles.bl_ie}>
             <span>Expenses</span>
             <span>40000$</span>
           </div>
-          <div className="bar_graph">
+          <div className={styles.bar_graph}>
             <BBarChart />
           </div>
-          <div className="Spending_Limit">
-            <div className="sl_title">
+          <div className={styles.Spending_Limit}>
+            <div className={styles.sl_title}>
               <h2>Spending Limit</h2>
               <button>Edit</button>
             </div>
-            <div
-              className="
-            progress_div"
-            >
+            <div className={styles.progress_div}>
               <ProgressBar bgcolor="#ae94ee" progress="30" height={30} />
             </div>
             <h5>Monthly Transaction Limit</h5>
@@ -430,31 +423,31 @@ function InsightPage(params) {
           </div>
           <PrioritiesContainer />
         </div>
-        <div className="insight_right_r">
-          <div className="pichart_container">
+        <div className={styles.insight_right_r}>
+          <div className={styles.pichart_container}>
             <Example1 />
-            <div className="pc_stats">
+            <div className={styles.pc_stats}>
               <h1>Burn</h1>
-              <div className="pc_stats_div">
+              <div className={styles.pc_stats_div}>
                 <span>30%</span>
                 <span>grocery</span>
               </div>
-              <div className="pc_stats_div">
+              <div className={styles.pc_stats_div}>
                 <span>30%</span>
                 <span>grocery</span>
               </div>
-              <div className="pc_stats_div">
+              <div className={styles.pc_stats_div}>
                 <span>30%</span>
                 <span>grocery</span>
               </div>
-              <div className="pc_stats_div">
+              <div className={styles.pc_stats_div}>
                 <span>30%</span>
                 <span>grocery</span>
               </div>
             </div>
           </div>
           <ITransactionContainer />
-          <div className="bar_graph">
+          <div className={styles.bar_graph}>
             <LineChart />
           </div>
         </div>
@@ -466,17 +459,17 @@ function InsightPage(params) {
 function MpPage(params) {
   return (
     <>
-      <div className="mp_right">
-        <div className="mp_heading">Best product For You</div>
-        <div className="sbf">
-          <div className="sb_div">
-            <span className="sb_container">🔎</span>
-            <div className="input_div">
+      <div className={styles.mp_right}>
+        <div className={styles.mp_heading}>Best product For You</div>
+        <div className={styles.sbf}>
+          <div className={styles.sb_div}>
+            <span className={styles.sb_container}>🔎</span>
+            <div className={styles.input_div}>
               <input type="text" placeholder="Search Your Product" />
             </div>
           </div>
-          <div className="mp_fbtn">
-            <select className="select_btn">
+          <div className={styles.mp_fbtn}>
+            <select className={styles.select_btn}>
               <option>Filters </option>
               <option>Today</option>
               <option>yesterday</option>
@@ -484,7 +477,7 @@ function MpPage(params) {
             </select>
           </div>
         </div>
-        <div className="categories_div">
+        <div className={styles.categories_div}>
           <span>Categories</span>
           <ul>
             <li>
@@ -510,14 +503,14 @@ function MpPage(params) {
             </li>
           </ul>
         </div>
-        <div className="product_container">
-          <div className="p_card">
-            <div className="p_img">
+        <div className={styles.product_container}>
+          <div className={styles.p_card}>
+            <div className={styles.p_img}>
               <img alt="p_image" src={product_img1} />
             </div>
-            <h3 className="p_heading">MI 10000maH Power Bank</h3>
+            <h3 className={styles.p_heading}>MI 10000maH Power Bank</h3>
             <h4>this powerbanks is best in the market</h4>
-            <div className="p_sites">
+            <div className={styles.p_sites}>
               <div>
                 <img alt="flipkart" src={flipkart_img} />
                 <span>1200</span>
@@ -533,13 +526,13 @@ function MpPage(params) {
             </div>
             <button>Add to cart</button>
           </div>
-          <div className="p_card">
-            <div className="p_img">
+          <div className={styles.p_card}>
+            <div className={styles.p_img}>
               <img alt="p_image" src={product_img1} />
             </div>
-            <h3 className="p_heading">MI 10000maH Power Bank</h3>
+            <h3 className={styles.p_heading}>MI 10000maH Power Bank</h3>
             <h4>this powerbanks is best in the market</h4>
-            <div className="p_sites">
+            <div className={styles.p_sites}>
               <div>
                 <img alt="flipkart" src={flipkart_img} />
                 <span>1200</span>

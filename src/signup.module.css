@@ -24,6 +24,7 @@ body {
 .sect1 {
   grid-area: area1;
   width: 50vw;
+  /* background-color: #4612b4; */
   /* float: left; */
 }
 
@@ -73,7 +74,7 @@ h3 {
   font-size: 2.5em;
 }
 
-fieldset.maang-btn button {
+fieldset.maang_btn button {
   border-radius: 0.75vw;
   font-weight: bolder;
   font-size: 1.8em;
