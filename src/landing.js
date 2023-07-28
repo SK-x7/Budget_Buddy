@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import "./landing.module.css";
+import styles from "./landing.module.css";
+// import styles from "./landing.module.css";
 
 // import LoginPage from "./loginPage";
 // import SignUp from "./signUp";
@@ -22,10 +23,10 @@ export default function LandingPage(params) {
 
   return (
     <>
-      <div className="main_">
-        <div id="nav">
-          <img src={logo} alt="Logo........" id="logo" />
-          <ul id="menu">
+      <div className={styles.main_}>
+        <div id={styles.nav}>
+          <img src={logo} alt="Logo........" id={styles.logo} />
+          <ul id={styles.menu}>
             <li>
               <button onClick={() => navigate("/home")}>Home</button>
             </li>
@@ -33,24 +34,24 @@ export default function LandingPage(params) {
               <button onClick={() => navigate("/login")}>Sign Up/login</button>
             </li>
             <li>
-              <a href="#fethead">Features</a>
+              <a href="#{styles.fethead}">Features</a>
             </li>
             <li>
               <a href="#mission">About Us</a>
             </li>
           </ul>
         </div>
-        <div id="Herosec">
-          <div id="heroimg">
+        <div id={styles.Herosec}>
+          <div id={styles.heroimg}>
             <img src={lpMainImg} alt="hero...." />
           </div>
-          <div id="herotxt">
+          <div id={styles.herotxt}>
             <h1>SAVE MORE GROW MORE WITH BUDGET BUDDY</h1>
           </div>
         </div>
         <hr />
-        <div id="WHTBB">
-          <div id="wtxt">
+        <div id={styles.WHTBB}>
+          <div id={styles.wtxt}>
             <h2>What is Budget Buddy</h2>
             <p>
               BudgetBuddy is your intelligent personal finance ally that
@@ -61,49 +62,49 @@ export default function LandingPage(params) {
               financial security on your own terms.
             </p>
           </div>
-          <div id="whtimg">
+          <div id={styles.whtimg}>
             <img src={Smfoo} alt="" />
           </div>
         </div>
         <hr />
-        <h2 id="fethead">Key Features of Budget Buddy</h2>
-        <div id="features">
-          <div className="f">
-            <div className="fimg">
+        <h2 id={styles.fethead}>Key Features of Budget Buddy</h2>
+        <div id={styles.features}>
+          <div className={styles.f}>
+            <div className={styles.fimg}>
               <img src={insight1} alt="" />
             </div>
-            <div className="ftxt">
+            <div className={styles.ftxt}>
               <p>Easy to track and manage your Income end Expenses.</p>
             </div>
           </div>
-          <div className="f">
-            <div className="fimg">
+          <div className={styles.f}>
+            <div className={styles.fimg}>
               <img src={targetImg} alt="" />
             </div>
-            <div className="ftxt">
+            <div className={styles.ftxt}>
               <p>Automated Insights and info about your Money</p>
             </div>
           </div>
-          <div className="f">
-            <div className="fimg">
+          <div className={styles.f}>
+            <div className={styles.fimg}>
               <img src={trackingImg} alt="" />
             </div>
-            <div className="ftxt">
+            <div className={styles.ftxt}>
               <p>Set Monthly and daily limit</p>
             </div>
           </div>
-          <div className="f">
-            <div className="fimg">
+          <div className={styles.ftxt}>
+            <div className={styles.fimg}>
               <img src={compareImg} alt="" />
             </div>
-            <div className="ftxt">
+            <div className={styles.ftxt}>
               <p>Compare price of item</p>
             </div>
           </div>
         </div>
         <hr />
-        <div id="mission">
-          <div id="Mtxt">
+        <div id={styles.mission}>
+          <div id={styles.Mtxt}>
             <h2>OUR MISSION</h2>
             <p>
               At BudgetBuddy, our mission is to empower financial confidence and
@@ -114,16 +115,16 @@ export default function LandingPage(params) {
               people with everything required to master their money.
             </p>
           </div>
-          <div id="Mimg">
+          <div id={styles.Mimg}>
             <img src={omImg} alt="" />
           </div>
         </div>
         <hr />
-        <div id="fword">
-          <div id="fimgf">
+        <div id={styles.fword}>
+          <div id={styles.fimgf}>
             <img src={MoneyPotImg} alt="" />
           </div>
-          <div id="ftxtf">
+          <div id={styles.ftxtf}>
             <h1>START SAVING TODAY WITHBUDGET BUDDY</h1>
             <button>signup</button>
             <button>log in</button>
