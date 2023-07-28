@@ -1,11 +1,14 @@
-html {
+
+.main_ {
   font-size: 6vw;
   background-color: #d7c7ff;
+  font-weight: 600;
+  padding-left: 2%;
 }
 
 #nav {
   display: grid;
-  grid-template-columns: 30% 20% 50%;
+  grid-template-columns: 3fr 2fr 5fr;
 }
 
 #logo {
@@ -20,12 +23,20 @@ html {
   grid-column-start: 3;
   grid-column-end: 4;
   margin-top: 5%;
+  margin-right: 12%;
 }
 #menu > li {
-  display: inline-block;
-  /* float: right; */
-  margin-left: 5%;
+  float: right;
+  margin-left: 2%;
   font-size: 35%;
+}
+
+#menu>li>button{
+  width: 100%;
+  border: none;
+  font-size: 100%;
+  color: #271ed1;
+  background: none;
 }
 
 #Herosec {
@@ -73,47 +84,75 @@ html {
   margin-top: 20%;
 }
 
-#fethead {
-  font-size: 75%;
-  text-align: center;
-}
 
-#features {
-  display: grid;
-  width: 100%;
-  height: 70vw;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10%;
-}
 
-.f {
-  display: grid;
-  grid-column: 1fr;
-  grid-template-rows: 50% 50%;
-  align-items: center;
-}
 
-.f > .fimg > img {
-  grid-row: 1/2;
-  width: 100%;
+
+#fethead{
   margin: auto;
-  align-self: center;
-  justify-self: center;
+  font-size: 75%;
 }
 
-.f > .ftxt > p {
-  grid-row: 2/3;
-  font-size: 40%;
-  text-align: center;
-  margin-top: -100px;
-  align-self: center;
-  justify-self: center;
+#features{
+  font-size: 50%;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  column-gap: 3%;
+  justify-content: space-evenly;
+  width: 100%;
 }
+
+#features>.f{
+  display: grid;
+  align-items: baseline;
+  grid-column: 1fr;
+  grid-row: 1fr 2fr;
+  width: 100%;
+}
+
+#features>.f>.fimg{
+  width: 100%;
+  height: 100%;
+  grid-row: 1/2; 
+}
+
+#features>.f>.ftxt{
+  width: 100%;
+  grid-row: 2/3;
+  align-self: start;
+  justify-self: center;
+  text-align: start;
+}
+
+
+#features>.f>.fimg>img{
+  width: 100%;
+  height: 100%;
+}
+
+#features>.f>.ftxt>p{
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+
+}
+
+
+
+
+
+
 
 #mission {
   display: grid;
   grid-template-columns: 65% 35%;
   width: 100%;
+  margin-top: 2%;
+}
+
+hr{
+  margin-top: 2%;
 }
 
 #Mtxt {
@@ -157,9 +196,20 @@ html {
   font-size: 100%;
 }
 
-button {
+#ftxtf>#su {
   width: 45%;
   height: 10%;
+  margin-left: 0;
+  background-color: #3900c6;
+  border-radius: 20px;
+  font-size: 40%;
+  color: #ffffff;
+}
+
+#ftxtf>#li {
+  width: 45%;
+  height: 10%;
+  margin-left: 2%;
   background-color: #3900c6;
   border-radius: 20px;
   font-size: 40%;

@@ -17,6 +17,10 @@ import trackingImg from "./images/Tracking.svg";
 import targetImg from "./images/Target.svg";
 import insight1 from "./images/Insights-1.svg";
 import compareImg from "./images/Compar price.svg";
+import Comparpricenew from "./images/Comparpricenew.svg";
+import Insightsfeturenew from "./images/Insightsfeturenew.svg";
+import Trackingnew from "./images/Trackingnew.svg";
+import Targetnew from "./images/Targetnew.svg";
 
 export default function LandingPage(params) {
   const navigate = useNavigate();
@@ -69,38 +73,48 @@ export default function LandingPage(params) {
         <hr />
         <h2 id={styles.fethead}>Key Features of Budget Buddy</h2>
         <div id={styles.features}>
+          
+          
           <div className={styles.f}>
             <div className={styles.fimg}>
-              <img src={insight1} alt="" />
+              <img src={Insightsfeturenew} alt="" />
             </div>
             <div className={styles.ftxt}>
               <p>Easy to track and manage your Income end Expenses.</p>
             </div>
           </div>
+          
+          
           <div className={styles.f}>
             <div className={styles.fimg}>
-              <img src={targetImg} alt="" />
+              <img src={Targetnew} alt="" />
             </div>
             <div className={styles.ftxt}>
               <p>Automated Insights and info about your Money</p>
             </div>
           </div>
+          
+          
           <div className={styles.f}>
             <div className={styles.fimg}>
-              <img src={trackingImg} alt="" />
+              <img src={Trackingnew} alt="" />
             </div>
             <div className={styles.ftxt}>
               <p>Set Monthly and daily limit</p>
             </div>
           </div>
-          <div className={styles.ftxt}>
+          
+          
+          <div className={styles.f}>
             <div className={styles.fimg}>
-              <img src={compareImg} alt="" />
+              <img src={Comparpricenew} alt="" />
             </div>
             <div className={styles.ftxt}>
               <p>Compare price of item</p>
             </div>
           </div>
+
+
         </div>
         <hr />
         <div id={styles.mission}>
@@ -126,8 +140,8 @@ export default function LandingPage(params) {
           </div>
           <div id={styles.ftxtf}>
             <h1>START SAVING TODAY WITHBUDGET BUDDY</h1>
-            <button>signup</button>
-            <button>log in</button>
+            <button id={styles.su}>signup</button>
+            <button id={styles.li}>log in</button>
           </div>
         </div>
       </div>
