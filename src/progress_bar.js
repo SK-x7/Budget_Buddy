@@ -3,7 +3,7 @@ import React from "react";
 const ProgressBar = ({ bgcolor, progress, height }) => {
   const Parentdiv = {
     height: height,
-    width: "70%",
+    width: "80%",
     borderRadius: 40,
     backgroundColor: "#d4c9f1",
   };
@@ -19,7 +19,8 @@ const ProgressBar = ({ bgcolor, progress, height }) => {
   const progresstext = {
     padding: 10,
     color: "black",
-    fontWeight: 900,
+    fontWeight: 600,
+    // height: 1,
   };
 
   return (
