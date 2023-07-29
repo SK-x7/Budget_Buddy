@@ -13,10 +13,7 @@ import lpMainImg from "./images/lpMain.png";
 import Smfoo from "./images/Smfoo.png";
 import omImg from "./images/OurMissionImg.png";
 import MoneyPotImg from "./images/moneypotImg.png";
-// import trackingImg from "./images/Tracking.svg";
-// import targetImg from "./images/Target.svg";
-// import insight1 from "./images/Insights-1.svg";
-// import compareImg from "./images/Compar price.svg";
+
 import Comparpricenew from "./images/Comparpricenew.svg";
 import Insightsfeturenew from "./images/Insightsfeturenew.svg";
 import Trackingnew from "./images/Trackingnew.svg";
@@ -73,8 +70,6 @@ export default function LandingPage(params) {
         <hr />
         <h2 id={styles.fethead}>Key Features of Budget Buddy</h2>
         <div id={styles.features}>
-          
-          
           <div className={styles.f}>
             <div className={styles.fimg}>
               <img src={Insightsfeturenew} alt="" />
@@ -83,8 +78,7 @@ export default function LandingPage(params) {
               <p>Easy to track and manage your Income end Expenses.</p>
             </div>
           </div>
-          
-          
+
           <div className={styles.f}>
             <div className={styles.fimg}>
               <img src={Targetnew} alt="" />
@@ -93,8 +87,7 @@ export default function LandingPage(params) {
               <p>Automated Insights and info about your Money</p>
             </div>
           </div>
-          
-          
+
           <div className={styles.f}>
             <div className={styles.fimg}>
               <img src={Trackingnew} alt="" />
@@ -103,8 +96,7 @@ export default function LandingPage(params) {
               <p>Set Monthly and daily limit</p>
             </div>
           </div>
-          
-          
+
           <div className={styles.f}>
             <div className={styles.fimg}>
               <img src={Comparpricenew} alt="" />
@@ -113,8 +105,6 @@ export default function LandingPage(params) {
               <p>Compare price of item</p>
             </div>
           </div>
-
-
         </div>
         <hr />
         <div id={styles.mission}>

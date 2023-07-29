@@ -86,13 +86,8 @@ export default function SignUP(params) {
             <fieldset style={{ marginTop: "-1vh" }}>
               <span>Already have an Acount!</span>
               <span>
-                <button
-                  onClick={() => navigate("/signup")}
-                  id={styles.loginbtn}
-                >
-                  Login
-                </button>
-              </span>
+                <button onClick={() => navigate("/login")}>Login</button>
+</span>
             </fieldset>
           </form>
         </section>
