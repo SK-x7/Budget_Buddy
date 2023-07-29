@@ -182,7 +182,13 @@ function ProfileBar(params) {
       <h1 className={styles.profile_bar_h1}>Hello Bheru👋🏻</h1>
       {/* <h6 className={styles.profile_bar_h1}>m</h6> */}
       <div className={styles.profile_page_container}>
-        <img className={styles.profile_photo} alt="profile" src={profile_img} />
+        <button>
+          <img
+            className={styles.profile_photo}
+            alt="profile"
+            src={profile_img}
+          />
+        </button>
       </div>
     </div>
   );
@@ -412,11 +418,11 @@ function InsightPage(params) {
           </div>
           <h1>Balance</h1>
           <h1>50,000$</h1>
-          <div className={styles.ibl_ie}>
+          <div className={styles.ibl_ie1}>
             <span>Income</span>
             <span>30000$</span>
           </div>
-          <div className={styles.ibl_ie}>
+          <div className={styles.ibl_ie2}>
             <span>Expenses</span>
             <span>40000$</span>
           </div>
@@ -472,7 +478,7 @@ function InsightPage(params) {
             </div>
           </div>
           <ITransactionContainer />
-          <div className={styles.bar_graph}>
+          <div className={styles.ibar_graph}>
             <LineChart />
           </div>
         </div>
@@ -529,6 +535,94 @@ function MpPage(params) {
           </ul>
         </div>
         <div className={styles.product_container}>
+          <div className={styles.p_card}>
+            <div className={styles.p_img}>
+              <img alt="p_image" src={product_img1} />
+            </div>
+            <h3 className={styles.p_heading}>MI 10000maH Power Bank</h3>
+            <h4>this powerbanks is best in the market</h4>
+            <div className={styles.p_sites}>
+              <div>
+                <img alt="flipkart" src={flipkart_img} />
+                <span>1200</span>
+              </div>
+              <div>
+                <img alt="flipkart" src={amazon_img} />
+                <span>1500</span>
+              </div>
+              <div>
+                <img alt="flipkart" src={shop_img} />
+                <span>1000</span>
+              </div>
+            </div>
+            <button>Add to cart</button>
+          </div>
+          <div className={styles.p_card}>
+            <div className={styles.p_img}>
+              <img alt="p_image" src={product_img1} />
+            </div>
+            <h3 className={styles.p_heading}>MI 10000maH Power Bank</h3>
+            <h4>this powerbanks is best in the market</h4>
+            <div className={styles.p_sites}>
+              <div>
+                <img alt="flipkart" src={flipkart_img} />
+                <span>1200</span>
+              </div>
+              <div>
+                <img alt="flipkart" src={amazon_img} />
+                <span>1500</span>
+              </div>
+              <div>
+                <img alt="flipkart" src={shop_img} />
+                <span>1000</span>
+              </div>
+            </div>
+            <button>Add to cart</button>
+          </div>
+          <div className={styles.p_card}>
+            <div className={styles.p_img}>
+              <img alt="p_image" src={product_img1} />
+            </div>
+            <h3 className={styles.p_heading}>MI 10000maH Power Bank</h3>
+            <h4>this powerbanks is best in the market</h4>
+            <div className={styles.p_sites}>
+              <div>
+                <img alt="flipkart" src={flipkart_img} />
+                <span>1200</span>
+              </div>
+              <div>
+                <img alt="flipkart" src={amazon_img} />
+                <span>1500</span>
+              </div>
+              <div>
+                <img alt="flipkart" src={shop_img} />
+                <span>1000</span>
+              </div>
+            </div>
+            <button>Add to cart</button>
+          </div>
+          <div className={styles.p_card}>
+            <div className={styles.p_img}>
+              <img alt="p_image" src={product_img1} />
+            </div>
+            <h3 className={styles.p_heading}>MI 10000maH Power Bank</h3>
+            <h4>this powerbanks is best in the market</h4>
+            <div className={styles.p_sites}>
+              <div>
+                <img alt="flipkart" src={flipkart_img} />
+                <span>1200</span>
+              </div>
+              <div>
+                <img alt="flipkart" src={amazon_img} />
+                <span>1500</span>
+              </div>
+              <div>
+                <img alt="flipkart" src={shop_img} />
+                <span>1000</span>
+              </div>
+            </div>
+            <button>Add to cart</button>
+          </div>
           <div className={styles.p_card}>
             <div className={styles.p_img}>
               <img alt="p_image" src={product_img1} />
