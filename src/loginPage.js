@@ -1,7 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./login.module.css";
-
+import bitLady from "./images/lsMainImg.png";
+import Llogo from "./images/logo.png";
+import faceBbtn from "./images/Facebook.svg";
+import twitbtn from "./images/twitter.svg";
+import googlebtn from "./images/Google.svg";
 export default function LoginPage(params) {
   const navigate = useNavigate();
   return (
@@ -13,20 +17,12 @@ export default function LoginPage(params) {
             <h1 className={styles.headerr2}>keep growing</h1>
           </header>
           <span>
-            <img
-              src="./resources/_0680d48e-fbbb-42d9-aafe-07870a57628c-removebg-preview - Copy.png"
-              alt="Bitcoin"
-              id={styles.image}
-            />
+            <img src={bitLady} alt="Bitcoin" id={styles.image} />
           </span>
         </section>
         <section className={styles.sect2}>
           <span>
-            <img
-              className={styles.logo}
-              src="./resources/Group 3.png"
-              alt="BudgetBuddy"
-            />
+            <img className={styles.logo} src={Llogo} alt="BudgetBuddy" />
           </span>
           <header>
             <h3 style={{ color: "#4612b4", textTransform: "uppercase" }}>
@@ -38,9 +34,15 @@ export default function LoginPage(params) {
           <form action="#" style={{ display: "inline-block" }}>
             <span>Log in with</span>
             <fieldset className={styles.maang_btn}>
-              <button className="fa fa-facebook" id={styles.fb} />
-              <button className="fa fa-twitter" id={styles.twitter} />
-              <button className="fa fa-google" id={styles.google} />
+              <button id={styles.fb}>
+                <img src={faceBbtn} id={styles.fb} alt="FaceBook" />
+              </button>
+              <button id={styles.twitter}>
+                <img src={twitbtn} id={styles.twitter} alt="Twitter" />
+              </button>
+              <button id={styles.google}>
+                <img src={googlebtn} id={styles.google} alt="Google" />
+              </button>
             </fieldset>
             <span>or</span>
             <fieldset>
@@ -71,7 +73,12 @@ export default function LoginPage(params) {
             <fieldset>
               <span> Don't have an account? </span>
               <span>
-                <button onClick={() => navigate("/signup")}>Sign up</button>
+                <button
+                  onClick={() => navigate("/signup")}
+                  id={styles.signinbtn}
+                >
+                  Sign up
+                </button>
               </span>
             </fieldset>
           </form>
