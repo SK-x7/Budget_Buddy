@@ -15,7 +15,7 @@
   grid-column-start: 1;
   grid-column-end: 2;
   overflow: hidden;
-  width: 100%;
+  width: 67%;
 }
 
 #menu {
@@ -23,7 +23,7 @@
   grid-column-start: 3;
   grid-column-end: 4;
   margin-top: 5%;
-  margin-right: 12%;
+  margin-right: 13%;
 }
 #menu > li {
   float: right;
@@ -42,11 +42,13 @@
 #Herosec {
   display: grid;
   grid-template-columns: 50% 50%;
+  height: 70%;
+  justify-content: space-evenly;
 }
 
 #heroimg {
   grid-column: 1/2;
-  width: 100%;
+  width: 90%;
 }
 
 #heroimg > img {
@@ -55,13 +57,17 @@
 
 #herotxt {
   grid-column: 2/3;
-  font-size: 55%;
-  margin-left: 10%;
+  font-size: 50%;
+  margin-left: 0;
+  text-align: left;
+  padding-top: 12%;
+  padding-left: 6%;
 }
 
 #WHTBB {
   display: grid;
   grid-template-columns: 65% 35%;
+  margin-right: 5%;
 }
 
 #wtxt {
@@ -91,6 +97,7 @@
 #fethead{
   margin: auto;
   font-size: 75%;
+  text-align: center;
 }
 
 #features{
@@ -101,6 +108,7 @@
   column-gap: 3%;
   justify-content: space-evenly;
   width: 100%;
+  margin-right: 5%;
 }
 
 #features>.f{
@@ -178,6 +186,7 @@ hr{
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
+  justify-content: center;
 }
 
 #fimgf {
@@ -189,11 +198,13 @@ hr{
 }
 
 #ftxtf {
+  grid-column: 2/3;
   width: 100%;
+  padding-top: 14%;
 }
 
 #ftxtf > h1 {
-  font-size: 100%;
+  font-size: 90%;
 }
 
 #ftxtf>#su {
