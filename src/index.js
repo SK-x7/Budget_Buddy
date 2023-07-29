@@ -21,7 +21,7 @@ root.render(
       <Route exact path="/signup" element={<SignUP />} />
       <Route exact path="/home" element={<App />} />
 
-      <Route exact path="/profile" element={<ProfilePage />} />
+      <Route exact path="/profilepage" element={<ProfilePage />} />
     </Routes>
   </BrowserRouter>
 );
