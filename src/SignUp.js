@@ -11,14 +11,14 @@ export default function SignUP(params) {
 
   return (
     <>
-      <div className={styles.signin}>
+      <div className={styles.app}>
         <section className={styles.sect1} style={{ fontSize: "2.5rem" }}>
           <header className={styles.headerr}>
             <h1 className={styles.headerr1}>START SAVING TODAY WITH</h1>
             <h1 className={styles.headerr2}>Budget Buddy</h1>
           </header>
           <span>
-            <img src={bitLady} alt="Bitcoin" id={styles.image} />
+            <img src={bitLady} alt="Bitcoin" />
           </span>
         </section>
         <section className={styles.sect2}>
@@ -29,64 +29,58 @@ export default function SignUP(params) {
             <h3>Create Account</h3>
           </header>
           {/* form */}
-          <form
-            action="#"
-            id={styles.signupForm}
-            style={{ display: "inline-block" }}
-          >
-            <span>Sign-Up with</span>
+          <form action="#">
+            <span>---------------- Sign-up with ------------------</span>
             <fieldset className={styles.maang_btn}>
-              <button id={styles.fb}>
+              <button>
                 <img src={faceBbtn} id={styles.fb} alt="FaceBook" />
               </button>
-              <button id={styles.twitter}>
+              <button>
                 <img src={twitbtn} id={styles.twitter} alt="Twitter" />
               </button>
-              <button id={styles.google}>
+              <button>
                 <img src={googlebtn} id={styles.google} alt="Google" />
               </button>
             </fieldset>
-            <span>or</span>
-            <fieldset>
+            <span>--------------------- or ------------------------</span>
+            <fieldset className={styles.f2}>
               <input
+                className={styles.i}
                 type="email"
                 placeholder="Email Address"
-                id={styles.e_mail}
               />
-              <br />
-              <br />
+              <input className={styles.i} type="text" placeholder="@username" />
+
               <input
-                type="text"
-                placeholder="@username"
-                id={styles.username}
-              />{" "}
-              <br />
-              <br />
-              <input
+                className={styles.i}
                 type="password"
                 placeholder="Password"
-                id={styles.user_passwrd}
               />
-              <br />
+
               <div id={styles.pass}>
-                <input type="checkbox" id={styles.c} />
-                <label htmlFor="t&c" style={{ marginTop: "10%" }}>
+                <input type="checkbox" />
+                <label>
                   I agree to all{" "}
                   <a href="www.google.com">Terms and Condition</a>
                 </label>
               </div>
-              <p id={styles.errorMsgSpanId} />
+
               <span>
                 <button type="submit" id={styles.signin}>
                   Sign Up
                 </button>
               </span>
             </fieldset>
-            <span>or</span>
-            <fieldset>
+            <span>--------------------- or ----------------------</span>
+            <fieldset className={styles.f3}>
               <span>Already have an Acount!</span>
               <span>
-                <button onClick={() => navigate("/login")}>Login</button>
+                <button
+                  onClick={() => navigate("/login")}
+                  id={styles.signinbtn}
+                >
+                  Login
+                </button>
               </span>
             </fieldset>
           </form>
