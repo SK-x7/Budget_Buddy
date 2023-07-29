@@ -11,7 +11,7 @@ export default function SignUP(params) {
 
   return (
     <>
-      <div className={styles.signin}>
+      <div className={styles.app}>
         <section className={styles.sect1} style={{ fontSize: "2.5rem" }}>
           <header className={styles.headerr}>
             <h1 className={styles.headerr1}>START SAVING TODAY WITH</h1>
@@ -36,14 +36,14 @@ export default function SignUP(params) {
           >
             <span>Sign-Up with</span>
             <fieldset className={styles.maang_btn}>
-              <button id={styles.fb}>
-                <img src={faceBbtn} id={styles.fb} alt="FaceBook" />
+              <button id={styles.fb} className={styles.iconbtn}>
+                <img src={faceBbtn} id={styles.fbimg} alt="FaceBook" />
               </button>
-              <button id={styles.twitter}>
-                <img src={twitbtn} id={styles.twitter} alt="Twitter" />
+              <button id={styles.twitter} className={styles.iconbtn}>
+                <img src={twitbtn} id={styles.twitterimg} alt="Twitter" />
               </button>
-              <button id={styles.google}>
-                <img src={googlebtn} id={styles.google} alt="Google" />
+              <button id={styles.google} className={styles.iconbtn}>
+                <img src={googlebtn} id={styles.googleimg} alt="Google" />
               </button>
             </fieldset>
             <span>or</span>
@@ -68,7 +68,7 @@ export default function SignUP(params) {
                 id={styles.user_passwrd}
               />
               <br />
-              <div id={styles.pass}>
+              <div id={styles.pass} style={{ marginTop: "1.9vh" }}>
                 <input type="checkbox" id={styles.c} />
                 <label htmlFor="t&c" style={{ marginTop: "10%" }}>
                   I agree to all{" "}
@@ -83,10 +83,15 @@ export default function SignUP(params) {
               </span>
             </fieldset>
             <span>or</span>
-            <fieldset>
+            <fieldset style={{ marginTop: "-1vh" }}>
               <span>Already have an Acount!</span>
               <span>
-                <button onClick={() => navigate("/signup")}>Login</button>
+                <button
+                  onClick={() => navigate("/signup")}
+                  id={styles.loginbtn}
+                >
+                  Login
+                </button>
               </span>
             </fieldset>
           </form>

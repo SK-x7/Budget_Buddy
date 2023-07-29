@@ -34,14 +34,14 @@ export default function LoginPage(params) {
           <form action="#" style={{ display: "inline-block" }}>
             <span>Log in with</span>
             <fieldset className={styles.maang_btn}>
-              <button id={styles.fb}>
-                <img src={faceBbtn} id={styles.fb} alt="FaceBook" />
+              <button id={styles.fb} className={styles.iconbtn}>
+                <img src={faceBbtn} id={styles.fbimg} alt="FaceBook" />
               </button>
-              <button id={styles.twitter}>
-                <img src={twitbtn} id={styles.twitter} alt="Twitter" />
+              <button id={styles.twitter} className={styles.iconbtn}>
+                <img src={twitbtn} id={styles.twitterimg} alt="Twitter" />
               </button>
-              <button id={styles.google}>
-                <img src={googlebtn} id={styles.google} alt="Google" />
+              <button id={styles.google} className={styles.iconbtn}>
+                <img src={googlebtn} id={styles.googleimg} alt="Google" />
               </button>
             </fieldset>
             <span>or</span>
