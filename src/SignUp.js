@@ -32,6 +32,7 @@ export default function SignUP(params) {
           <form action="#">
             <span>---------------- Sign-up with ------------------</span>
             <fieldset className={styles.maang_btn}>
+
               <button>
                 <img src={faceBbtn} id={styles.fb} alt="FaceBook" />
               </button>
@@ -40,6 +41,7 @@ export default function SignUP(params) {
               </button>
               <button>
                 <img src={googlebtn} id={styles.google} alt="Google" />
+
               </button>
             </fieldset>
             <span>--------------------- or ------------------------</span>
@@ -57,9 +59,11 @@ export default function SignUP(params) {
                 placeholder="Password"
               />
 
+
               <div id={styles.pass}>
                 <input type="checkbox" />
                 <label>
+
                   I agree to all{" "}
                   <a href="www.google.com">Terms and Condition</a>
                 </label>
@@ -71,6 +75,7 @@ export default function SignUP(params) {
                 </button>
               </span>
             </fieldset>
+
             <span>--------------------- or ----------------------</span>
             <fieldset className={styles.f3}>
               <span>Already have an Acount!</span>
@@ -82,6 +87,7 @@ export default function SignUP(params) {
                   Login
                 </button>
               </span>
+
             </fieldset>
           </form>
         </section>
