@@ -18,6 +18,10 @@ import flipkart_img from "./images/Flipkart.svg";
 import product_img1 from "./images/product img.png";
 import { useState } from "react";
 import styles from "./index.module.css";
+import { useNavigate } from "react-router-dom";
+
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 // import { LineChart } from "recharts";
 export default function App() {
   const [Open, setOpen] = useState("home");
@@ -177,12 +181,14 @@ function HomePage() {
 }
 
 function ProfileBar(params) {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.profile_bar}>
       <h1 className={styles.profile_bar_h1}>Hello Bheru👋🏻</h1>
       {/* <h6 className={styles.profile_bar_h1}>m</h6> */}
       <div className={styles.profile_page_container}>
-        <button>
+        <button onClick={() => navigate("/profilepage")}>
           <img
             className={styles.profile_photo}
             alt="profile"

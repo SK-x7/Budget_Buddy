@@ -86,7 +86,7 @@ export default function SignUP(params) {
             <fieldset>
               <span>Already have an Acount!</span>
               <span>
-                <button onClick={() => navigate("/signup")}>Login</button>
+                <button onClick={() => navigate("/login")}>Login</button>
               </span>
             </fieldset>
           </form>
