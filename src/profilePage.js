@@ -6,7 +6,7 @@ import marketplace_img from "./images/Marketplace.svg";
 // import pi from "./images/profile_img.png";
 import incoming_img from "./images/Income.svg";
 import outgoing_img from "./images/Expense.svg";
-import pp from "./images/profile.jpeg";
+import pp from "./images/ProfileImage.jpg";
 import bi from "./images/bal icn.svg";
 import i1 from "./images/Insights.svg";
 import tracki from "./images/Trackingnew.svg";
