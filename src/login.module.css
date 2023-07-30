@@ -22,6 +22,7 @@ body {
 }
 
 .sect1 {
+  background: linear-gradient(to right, #D7C7FF 60%, #DDD4F0);
   grid-area: area1;
   width: 50vw;
   /* float: left; */
@@ -135,10 +136,12 @@ footer {
 
 #signinbtn {
   background: none;
-  border: none;
   color: blue;
-  cursor: pointer;
+  border: none;
   text-decoration: underline;
+  padding-left: 2.2%;
+  font-size: 2.1vh;
+  cursor: pointer;
 }
 
 #fbimg {

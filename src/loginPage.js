@@ -32,7 +32,7 @@ export default function LoginPage(params) {
           {/* <span>Log in with</span> */}
           {/* form */}
           <form action="#" style={{ display: "inline-block" }}>
-            <span>Log in with</span>
+            <span>---------------- Log in with -------------------</span>
             <fieldset className={styles.maang_btn}>
               <button id={styles.fb} className={styles.iconbtn}>
                 <img src={faceBbtn} id={styles.fbimg} alt="FaceBook" />
@@ -44,7 +44,7 @@ export default function LoginPage(params) {
                 <img src={googlebtn} id={styles.googleimg} alt="Google" />
               </button>
             </fieldset>
-            <span>or</span>
+            <span>--------------------- or ------------------------</span>
             <fieldset>
               <input type="email" placeholder="E-mail/@username" />
               <br />
@@ -69,7 +69,7 @@ export default function LoginPage(params) {
                 <button id={styles.signin}>Sign In</button>
               </span>
             </fieldset>
-            <span>or</span>
+            <span>--------------------- or ------------------------</span>
             <fieldset>
               <span> Don't have an account? </span>
               <span>
