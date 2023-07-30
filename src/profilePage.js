@@ -18,15 +18,25 @@ import ri from "./images/Men_invest_and_have_made_a_profit_generated-removebg-pr
 // import styles from "./profilepage.module.css";
 
 import React from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 import styles from "./profilepage.module.css";
 
 export default function ProfilePage(params) {
+  // eslint-disable-next-line no-unused-vars
+  const [Open, setOpen] = useState("home");
+  const navigate = useNavigate();
+
+  function handleOpen(page) {
+    setOpen(page);
+
+    navigate("/home");
+  }
   return (
     <>
       <div className={styles.p_main_container}>
-        <SideMenu />
+        <SideMenu onOpen={handleOpen} />
         <div className={styles.pright}>
           <div className={styles.pright_l}>
             <div className={styles.p_container}>
