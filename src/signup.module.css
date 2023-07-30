@@ -7,7 +7,6 @@
 
 /* Apply styles to the body tag */
 body {
-  background-color: #ddd4f0;
   color: #333;
   line-height: 1.3;
   margin: 0;
@@ -26,11 +25,15 @@ body {
 }
 
 .sect1 {
+
   /* grid-area: area1; */
+
+
   width: 50vw;
   height: 100% !important;
   /* background-color: #f45a29; */
   /* float: left; */
+  font-size: 75%;
 }
 
 .headerr {
@@ -105,8 +108,10 @@ body {
   height: 50%;
 }
 
+
 fieldset {
   border: none;
+
 }
 
 form {
@@ -180,6 +185,8 @@ input[type="checkbox"] {
 #image {
   /* border: 3px solid #F45A29; */
   height: 67vh;
+
+
 }
 
 /* .login {
@@ -196,24 +203,31 @@ input[type="checkbox"] {
   text-decoration: underline;
 }
 
+
 .nbtn {
   border: none;
 }
 
 #fb {
+
   height: 4vh;
   background-repeat: no-repeat;
   width: fit-content;
 }
+
 
 #twitter {
+
   height: 4vh;
   background-repeat: no-repeat;
   width: fit-content;
 }
 
+
 #google {
+
   height: 4vh;
   background-repeat: no-repeat;
   width: fit-content;
 }
+

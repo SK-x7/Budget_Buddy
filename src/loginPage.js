@@ -34,6 +34,7 @@ export default function LoginPage(params) {
           <form action="#">
             <span>---------------- Log in with -------------------</span>
             <fieldset className={styles.maang_btn}>
+
               <button>
                 <img src={faceBbtn} id={styles.fb} alt="FaceBook" />
               </button>
@@ -42,6 +43,7 @@ export default function LoginPage(params) {
               </button>
               <button>
                 <img src={googlebtn} id={styles.google} alt="Google" />
+
               </button>
             </fieldset>
             <span>--------------------- or ------------------------</span>

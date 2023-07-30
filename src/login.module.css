@@ -179,7 +179,6 @@ input[type="checkbox"] {
 }
 
 #image {
-  /* border: 3px solid #F45A29; */
   height: 67vh;
   /* margin-top: 7vh; */
 }
@@ -197,20 +196,27 @@ input[type="checkbox"] {
   text-decoration: underline;
 }
 
+
 #fb {
+
   height: 4vh;
   background-repeat: no-repeat;
   width: fit-content;
 }
 
 #twitter {
+
   height: 4vh;
   background-repeat: no-repeat;
   width: fit-content;
 }
 
+
 #google {
+
   height: 4vh;
   background-repeat: no-repeat;
   width: fit-content;
 }
+
+
