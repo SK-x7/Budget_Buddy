@@ -32,35 +32,39 @@ export default function LoginPage(params) {
           {/* <span>Log in with</span> */}
           {/* form */}
           <form action="#" style={{ display: "inline-block" }}>
-            <span>---------------- Log in with -------------------</span>
+            <span>Log in with</span>
             <fieldset className={styles.maang_btn}>
-              <button id={styles.fb} className={styles.iconbtn}>
-                <img src={faceBbtn} id={styles.fbimg} alt="FaceBook" />
+
+              <button>
+                <img src={faceBbtn} id={styles.fb} alt="FaceBook" />
               </button>
-              <button id={styles.twitter} className={styles.iconbtn}>
-                <img src={twitbtn} id={styles.twitterimg} alt="Twitter" />
+              <button>
+                <img src={twitbtn} id={styles.twitter} alt="Twitter" />
               </button>
-              <button id={styles.google} className={styles.iconbtn}>
-                <img src={googlebtn} id={styles.googleimg} alt="Google" />
+              <button>
+                <img src={googlebtn} id={styles.google} alt="Google" />
+
               </button>
             </fieldset>
-            <span>--------------------- or ------------------------</span>
+            <span>or</span>
             <fieldset>
               <input type="email" placeholder="E-mail/@username" />
               <br />
               <br />
               <input
+                className={styles.i}
                 type="password"
                 id={styles.passwrdInputId}
                 placeholder="Password"
                 onkeyup="check()"
                 required
               />
-              <br />
-              <p style={{ color: "red" }} id={styles.errorMsgSpanId} />
+
               <div className={styles.pass}>
-                <input type="checkbox" />
-                <label htmlFor>Keep me logged in</label>
+                <div>
+                  <input type="checkbox" />
+                  <label htmlFor>Keep me logged in</label>
+                </div>
                 <footer>
                   <a href="www.google.com">Forgot Password?</a>
                 </footer>
@@ -69,17 +73,13 @@ export default function LoginPage(params) {
                 <button id={styles.signin}>Sign In</button>
               </span>
             </fieldset>
-            <span>--------------------- or ------------------------</span>
+            <span>or</span>
             <fieldset>
               <span> Don't have an account? </span>
-              <span>
-                <button
-                  onClick={() => navigate("/signup")}
-                  id={styles.signinbtn}
-                >
-                  Sign up
-                </button>
-              </span>
+
+              <button onClick={() => navigate("/signup")} id={styles.signinbtn}>
+                Sign up
+              </button>
             </fieldset>
           </form>
           {/* <span>Log in with</span> */}
