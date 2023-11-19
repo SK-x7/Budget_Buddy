@@ -23,7 +23,7 @@ body {
 }
 
 .sect1 {
-  /* grid-area: area1; */
+  grid-area: area1;
   width: 50vw;
   height: 100% !important;
 
@@ -190,10 +190,12 @@ input[type="checkbox"] {
 
 #signinbtn {
   background: none;
-  border: none;
   color: blue;
-  cursor: pointer;
+  border: none;
   text-decoration: underline;
+  padding-left: 2.2%;
+  font-size: 2.1vh;
+  cursor: pointer;
 }
 
 

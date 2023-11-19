@@ -31,8 +31,8 @@ export default function LoginPage(params) {
           </header>
           {/* <span>Log in with</span> */}
           {/* form */}
-          <form action="#">
-            <span>---------------- Log in with -------------------</span>
+          <form action="#" style={{ display: "inline-block" }}>
+            <span>Log in with</span>
             <fieldset className={styles.maang_btn}>
 
               <button>
@@ -46,14 +46,11 @@ export default function LoginPage(params) {
 
               </button>
             </fieldset>
-            <span>--------------------- or ------------------------</span>
-            <fieldset className={styles.f2}>
-              <input
-                className={styles.i}
-                type="email"
-                placeholder="E-mail/@username"
-              />
-
+            <span>or</span>
+            <fieldset>
+              <input type="email" placeholder="E-mail/@username" />
+              <br />
+              <br />
               <input
                 className={styles.i}
                 type="password"
@@ -76,8 +73,8 @@ export default function LoginPage(params) {
                 <button id={styles.signin}>Sign In</button>
               </span>
             </fieldset>
-            <span>--------------------- or ------------------------</span>
-            <fieldset className={styles.f3}>
+            <span>or</span>
+            <fieldset>
               <span> Don't have an account? </span>
 
               <button onClick={() => navigate("/signup")} id={styles.signinbtn}>

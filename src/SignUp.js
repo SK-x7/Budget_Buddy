@@ -29,8 +29,12 @@ export default function SignUP(params) {
             <h3>Create Account</h3>
           </header>
           {/* form */}
-          <form action="#">
-            <span>---------------- Sign-up with ------------------</span>
+          <form
+            action="#"
+            id={styles.signupForm}
+            style={{ display: "inline-block" }}
+          >
+            <span>Sign-Up with</span>
             <fieldset className={styles.maang_btn}>
 
               <button>
@@ -44,8 +48,8 @@ export default function SignUP(params) {
 
               </button>
             </fieldset>
-            <span>--------------------- or ------------------------</span>
-            <fieldset className={styles.f2}>
+            <span>or</span>
+            <fieldset>
               <input
                 className={styles.i}
                 type="email"
@@ -75,19 +79,12 @@ export default function SignUP(params) {
                 </button>
               </span>
             </fieldset>
-
-            <span>--------------------- or ----------------------</span>
-            <fieldset className={styles.f3}>
+            <span>or</span>
+            <fieldset style={{ marginTop: "-1vh" }}>
               <span>Already have an Acount!</span>
               <span>
-                <button
-                  onClick={() => navigate("/login")}
-                  id={styles.signinbtn}
-                >
-                  Login
-                </button>
-              </span>
-
+                <button onClick={() => navigate("/login")}>Login</button>
+</span>
             </fieldset>
           </form>
         </section>
